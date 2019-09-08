@@ -661,21 +661,32 @@
 
                                                                                     <div class="col-xs-2">
                                                                                 <div class="dataTables_length" id="dynamic-table_length">
-                                                                                    <label>mostrar
+                                                                                    <label>mostrar 
                                                                                             <select name="dynamic-table_length"  class="form-control form-group">
                                                                                             <option value="10">10</option><option value="25">25</option><option value="50">50</option>
                                                                                             <option value="100">100</option></select> 
                                                                                             Registros</label>
                                                                                 </div>
                                                                                     </div>
+                                                                                    
+                                                                                <div class="col-xs-2">
+                                                                                    <div class="dataTables_length" id="dynamic-table_length">
+                                                                                            <label>usuario
+                                                                                                            <select  aria-controls="dynamic-table" class="form-control input-sm">
+                                                                                                            <option value="10">doctor</option>
+                                                                                                            <option value="100">enfermera</option></select> 
+                                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+
                                                                                     <div class="col-xs-5">
-                                                                                <div class="dataTables_length" id="dynamic-table_length">
-                                                                                    <label for="inputName"></i>desde</label>
-                                                                                    <input class="form-control date-picker input-mask-date" id="form-field-mask-1" type="text" data-date-format="dd/mm/yyyy">
-                                                                                    <label for="inputName">hasta</label>
-                                                                                    <input class="form-control date-picker input-mask-date" id="form-field-mask-1" type="text" data-date-format="dd/mm/yyyy">   
-                                                                                </div>
-                                                                                </div>
+                                                                                        <div class="dataTables_length" id="dynamic-table_length">
+                                                                                            <label for="inputName"></i>desde</label>
+                                                                                            <input class="form-control date-picker input-mask-date" id="form-field-mask-1" type="text" data-date-format="dd/mm/yyyy">
+                                                                                            <label for="inputName">hasta</label>
+                                                                                            <input class="form-control date-picker input-mask-date" id="form-field-mask-1" type="text" data-date-format="dd/mm/yyyy">   
+                                                                                        </div>
+                                                                                        </div>
                             
                                                                           
                             
@@ -684,7 +695,7 @@
                                                                             
                             
                             
-                                                                            <div class="col-xs-5">
+                                                                            <div class="col-xs-">
                                                                                 <div id="dynamic-table_filter" class="dataTables_filter">
                                                                                     <label>Buscar:
                                                                                         <input type="search" class="form-control input-sm" placeholder="" 
@@ -702,15 +713,51 @@
                                                                             <thead >
                                                                                 <tr role="row" style="background: #ffff">
                                                                                     <th style="width: 5%"><strong>#</strong></th>
-                                                                                    <th style="width: 40%"><strong>PACIENTE</strong></th>
-                                                                                    <td style="width: 20%"><strong>FECHA Y HORA</strong></td>
-                                                                                    <td style="width: 15%"><strong>ESTADO</strong></td>
-                                                                                    <th style="width: 8%"><strong>ACCIÓN</strong></th>
+                                                                                    <th style="width: 30%"><strong>USUARIO</strong></th>
+                                                                                    <td style="width: 15%"><strong>FECHA Y HORA </strong></td>
+                                                                                    <td style="width: 50%"><strong>ACCION</strong></td>
+                                                                                    
                                                                                 </tr>
                                                                             </thead>
                             
                                                                             <tbody>
+                                                                                <tr role="row" class="odd active">
+
+                                                                                    <td>1</td>
+                            
+                            
+                                                                                        
+                                
+                                                                                        <td>MAURICIO FUNES QUINTALLINA</td>
+                                
+                                                                                        <td>21 / SEP / 2016 09:30:00 AM </td>
+
+                                                                                        <td>REGISTRO CITA AL PACIENTE CON N° EXPEDIENTE FG34566 </td>
+                                
+                                
+                                
+                                                                                        
+                                
+                                                                                    </tr>
                                                                                     <tr role="row" class="odd active">
+
+                                                                                        <td>1</td>
+                                
+                                
+                                                                                            
+                                    
+                                                                                            <td>MAURICIO FUNES QUINTALLINA</td>
+                                    
+                                                                                            <td>21 / SEP / 2016 09:30:00 AM </td>
+    
+                                                                                            <td>REGISTRO CITA AL PACIENTE CON N° EXPEDIENTE FG12133 </td>
+                                    
+                                    
+                                    
+                                                                                            
+                                    
+                                                                                        </tr>
+                                                                                        <tr role="row" class="odd active">
 
                                                                                             <td>1</td>
                                     
@@ -720,322 +767,69 @@
                                                                                                 <td>MAURICIO FUNES QUINTALLINA</td>
                                         
                                                                                                 <td>21 / SEP / 2016 09:30:00 AM </td>
-
-                                                                                                <td><a class=" btn-success" style="padding: 5px">ATENDIDO</a></td>
+        
+                                                                                                <td>REGISTRO AL PACIENTE CON N° EXPEDIENTE FG13010 </td>
                                         
                                         
                                         
-                                                                                                <td>
-                                                                                                    
-                                        
-                                                                                                    <div class="hidden-sm hidden-xs action-buttons">
-                                        
-                                                                                                            
-                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
-                                                                                                                    <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
-                                                                                                                </a> 
-                                                                                                        <a class="red tooltip-info" href="#" data-rel="tooltip" title="cancelar">
-                                                                                                            <i class="ace-icon glyphicon glyphicon-remove bigger-180"></i>
-                                                                                                        </a>
-                                                                                                    </div>
-                                        
-                                                                                                    <div class="hidden-md hidden-lg">
-                                                                                                        <div class="inline pos-rel">
-                                                                                                            <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                    <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                                </button>
-                                        
-                                                                                                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                        <span class="blue">
-                                                                                                                                <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                        
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                        <span class="green">
-                                                                                                                                <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                        
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                        <span class="red">
-                                                                                                                                <i class="ace-icon glyphicon glyphicon-remove bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                                                                                            </ul>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </td>
+                                                                                                
                                         
                                                                                             </tr>
                                                                                             <tr role="row" class="odd active">
 
-                                                                                                    <td>2</td>
+                                                                                                <td>1</td>
+                                        
+                                        
+                                                                                                    
+                                            
+                                                                                                    <td>MAURICIO FUNES QUINTALLINA</td>
+                                            
+                                                                                                    <td>21 / SEP / 2016 09:30:00 AM </td>
+            
+                                                                                                    <td>REGISTRO AL PACIENTE CON N° EXPEDIENTE FG13010 </td>
+                                            
+                                            
+                                            
+                                                                                                    
+                                            
+                                                                                                </tr>
+                                                                                                <tr role="row" class="odd active">
+
+                                                                                                    <td>1</td>
                                             
                                             
                                                                                                         
                                                 
-                                                                                                        <td>MAURICIO FUNES QUINTALLINA</td>
+                                                                                                        <td>DOCANALUISA</td>
                                                 
                                                                                                         <td>21 / SEP / 2016 09:30:00 AM </td>
-        
-                                                                                                        <td><a class=" btn-success" style="padding: 5px">ATENDIDO</a></td>
+                
+                                                                                                        <td>REGISTRO AL PACIENTE CON N° EXPEDIENTE FG13010 </td>
                                                 
                                                 
                                                 
-                                                                                                        <td>
-                                                                                                            
-                                                
-                                                                                                            <div class="hidden-sm hidden-xs action-buttons">
-                                                
-                                                                                                                    <a class="red tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
-                                                                                                                            <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
-                                                                                                                        </a> 
-                                                
-                                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="cancelar">
-                                                                                                                    <i class="ace-icon glyphicon glyphicon-remove bigger-180"></i>
-                                                                                                                </a>
-                                                                                                            </div>
-                                                
-                                                                                                            <div class="hidden-md hidden-lg">
-                                                                                                                <div class="inline pos-rel">
-                                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                                        </button>
-                                                
-                                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                                        <li>
-                                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                                <span class="blue">
-                                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                                    </span>
-                                                                                                                            </a>
-                                                                                                                        </li>
-                                                
-                                                                                                                        <li>
-                                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                                <span class="green">
-                                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                                    </span>
-                                                                                                                            </a>
-                                                                                                                        </li>
-                                                
-                                                                                                                        <li>
-                                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                                <span class="red">
-                                                                                                                                        <i class="ace-icon glyphicon glyphicon-remove bigger-120"></i>
-                                                                                                                                    </span>
-                                                                                                                            </a>
-                                                                                                                        </li>
-                                                                                                                    </ul>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </td>
+                                                                                                        
                                                 
                                                                                                     </tr>
                                                                                                     <tr role="row" class="odd active">
 
-                                                                                                            <td>3</td>
+                                                                                                        <td>1</td>
+                                                
+                                                
+                                                                                                            
+                                                    
+                                                                                                            <td>DOCANALUISA</td>
+                                                    
+                                                                                                            <td>21 / SEP / 2016 09:30:00 AM </td>
+                    
+                                                                                                            <td>REGISTRO AL PACIENTE CON N° EXPEDIENTE FG13010 </td>
                                                     
                                                     
-                                                                                                                
-                                                        
-                                                                                                                <td>MAURICIO FUNES QUINTALLINA</td>
-                                                        
-                                                                                                                <td>21 / SEP / 2016 09:30:00 AM </td>
-                
-                                                                                                                <td><a class=" btn-warning" style="padding: 5px">CANCELADA</a></td>
-                                                        
-                                                        
-                                                        
-                                                                                                                <td>
-                                                                                                                    
-                                                        
-                                                                                                                    <div class="hidden-sm hidden-xs action-buttons">
-                                                        
-                                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
-                                                                                                                                    <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
-                                                                                                                                </a> 
-                                                        
-                                                                                                                        <a class="red tooltip-info" href="#" data-rel="tooltip" title="cancelar">
-                                                                                                                            <i class="ace-icon glyphicon glyphicon-remove bigger-180"></i>
-                                                                                                                        </a>
-                                                                                                                    </div>
-                                                        
-                                                                                                                    <div class="hidden-md hidden-lg">
-                                                                                                                        <div class="inline pos-rel">
-                                                                                                                            <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                                    <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                                                </button>
-                                                        
-                                                                                                                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                                                <li>
-                                                                                                                                    <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                                        <span class="blue">
-                                                                                                                                                <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                                            </span>
-                                                                                                                                    </a>
-                                                                                                                                </li>
-                                                        
-                                                                                                                                <li>
-                                                                                                                                    <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                                        <span class="green">
-                                                                                                                                                <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                                            </span>
-                                                                                                                                    </a>
-                                                                                                                                </li>
-                                                        
-                                                                                                                                <li>
-                                                                                                                                    <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                                        <span class="red">
-                                                                                                                                                <i class="ace-icon glyphicon glyphicon-remove bigger-120"></i>
-                                                                                                                                            </span>
-                                                                                                                                    </a>
-                                                                                                                                </li>
-                                                                                                                            </ul>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                        
-                                                                                                            </tr>
-                                                                                                            <tr role="row" class="odd active">
+                                                    
+                                                                                                            
+                                                    
+                                                                                                        </tr>
 
-                                                                                                                    <td>4</td>
-                                                            
-                                                            
-                                                                                                                        
-                                                                
-                                                                                                                        <td>MAURICIO FUNES QUINTALLINA</td>
-                                                                
-                                                                                                                        <td>21 / SEP / 2016 09:30:00 AM </td>
-                        
-                                                                                                                        <td><a class=" btn-danger" style="padding: 5px">PENDIENTE</a></td>
-                                                                
-                                                                
-                                                                
-                                                                                                                        <td>
-                                                                                                                            
-                                                                
-                                                                                                                            <div class="hidden-sm hidden-xs action-buttons">
-                                                                
-                                                                                                                                    <a class="green tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
-                                                                                                                                            <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
-                                                                                                                                        </a> 
-                                                                
-                                                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="cancelar">
-                                                                                                                                    <i class="ace-icon glyphicon glyphicon-remove bigger-180"></i>
-                                                                                                                                </a>
-                                                                                                                            </div>
-                                                                
-                                                                                                                            <div class="hidden-md hidden-lg">
-                                                                                                                                <div class="inline pos-rel">
-                                                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                                                        </button>
-                                                                
-                                                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                                                        <li>
-                                                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                                                <span class="blue">
-                                                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                                                    </span>
-                                                                                                                                            </a>
-                                                                                                                                        </li>
-                                                                
-                                                                                                                                        <li>
-                                                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                                                <span class="green">
-                                                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                                                    </span>
-                                                                                                                                            </a>
-                                                                                                                                        </li>
-                                                                
-                                                                                                                                        <li>
-                                                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                                                <span class="red">
-                                                                                                                                                        <i class="ace-icon glyphicon glyphicon-remove bigger-120"></i>
-                                                                                                                                                    </span>
-                                                                                                                                            </a>
-                                                                                                                                        </li>
-                                                                                                                                    </ul>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </td>
-                                                                
-                                                                                                                    </tr>
-                                                                                                                    <tr role="row" class="odd active">
-
-                                                                                            <td>5</td>
-                                    
-                                    
-                                                                                                
-                                        
-                                                                                                <td>MAURICIO FUNES QUINTALLINA</td>
-                                        
-                                                                                                <td>21 / SEP / 2016 09:30:00 AM </td>
-
-                                                                                                <td><a class=" btn-danger" style="padding: 5px">PENDIENTE</a></td>
-                                        
-                                        
-                                        
-                                                                                                <td>
-                                                                                                    
-                                        
-                                                                                                    <div class="hidden-sm hidden-xs action-buttons">
-                                        
-                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
-                                                                                                                    <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
-                                                                                                                </a> 
-                                        
-                                                                                                        <a class="red tooltip-info" href="#" data-rel="tooltip" title="cancelar">
-                                                                                                            <i class="ace-icon glyphicon glyphicon-remove bigger-180"></i>
-                                                                                                        </a>
-                                                                                                    </div>
-                                        
-                                                                                                    <div class="hidden-md hidden-lg">
-                                                                                                        <div class="inline pos-rel">
-                                                                                                            <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                    <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                                </button>
-                                        
-                                                                                                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                        <span class="blue">
-                                                                                                                                <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                        
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                        <span class="green">
-                                                                                                                                <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                        
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                        <span class="red">
-                                                                                                                                <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                                                                                            </ul>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </td>
-                                        
-                                                                                            </tr>
-                                                                                            
                                                                             </tbody>
 
                                                                         </table>
