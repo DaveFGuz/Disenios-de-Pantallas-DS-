@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
-    <title>Paciente - SICMEDIC</title>
+    <title>Respaldo - SICMEDIC</title>
 
     <meta name="description" content="top menu &amp; navigation" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -451,7 +451,7 @@
             <ul class="nav nav-list">
 
 
-                <li class=" active hover">
+                <li class="hover">
                     <a href="" onclick="location.href='vista-paciente.html'" class="dropdown-toggle">
                         <i class="menu-icon fa fa-user"></i>
                         <span class="menu-text">
@@ -490,7 +490,7 @@
                     
                 </li>
 
-                <li class="hover">
+                <li class="active hover">
                     <a href="#" class="dropdown-toggle">
                         <i class="menu-icon fa fa-lock"></i>
                         <span class="menu-text"> Seguridad </span>
@@ -501,7 +501,7 @@
                     <b class="arrow"></b>
 
                     <ul class="submenu">
-                        <li class="hover">
+                        <li class=" active hover">
                             <a href="vista-respaldo.html">
                                 <i class="menu-icon fa fa-caret-right"></i> Respaldo de Información
                             </a>
@@ -597,11 +597,7 @@
                                                                                 </span>
                                                                             </a>
                             
-                                                                            <a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table" data-original-title="" title=""  >
-                                                                                <span>
-                                                                                        <img src="btn-impresora.png" style="width: 30px;height: 30px;" >&nbsp;Imprimir</span>
-                                                                                </span>
-                                                                            </a>
+                                                                            
                                                                             <a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table" data-original-title="" title="" >
                                                                                 <span>
                                                                                         <img src="btn-ayuda.png" style="width: 30px;height: 30px;" >&nbsp;Ayuda</span>
@@ -640,13 +636,7 @@
                                                                                 </div>
                                                                                     </div>
                                                                                     <div class="col-xs-4">
-                                                                                <div class="dataTables_length" id="dynamic-table_length">
-                                                                                        <label>ESTADO
-                                                                                                        <select  aria-controls="dynamic-table" class="form-control input-sm">
-                                                                                                        <option value="10">de Alta</option>
-                                                                                                        <option value="100">de Baja</option></select> 
-                                                                                                        </label>
-                                                                                    </div>
+                                                                                
                                                                                 </div>
                             
                                                                             </div>
@@ -656,14 +646,7 @@
                                                                             
                             
                             
-                                                                            <div class="col-xs-4">
-                                                                                <div id="dynamic-table_filter" class="dataTables_filter">
-                                                                                    <label>Buscar:
-                                                                                        <input type="search" class="form-control input-sm" placeholder="" 
-                                                                                        aria-controls="dynamic-table"></label></div>
-                            
-                            
-                                                                            </div>
+                                                                            
                             
                                                                         </div>
                             
@@ -673,10 +656,10 @@
                             
                                                                             <thead >
                                                                                 <tr role="row" style="background: #ffff">
-                                                                                    <th style="width: 20%"><strong>EXPEDIENTE</strong></th>
-                                                                                    <th style="width: 60%"><strong>NOMBRE</strong></th>
-                                                                                    <td style="width: 5%"><strong>EDAD</strong></td>
-                                                                                    <th style="width: 10%"><strong>ACCIÓN</strong></th>
+                                                                                    <th style="width: 40%"><strong>Nombre Archivo</strong></th>
+                                                                                    <th style="width: 40%"><strong>Fecha y Hora</strong></th>
+                                                                                    <th style="width: 40%"><strong>Acción</strong></th>
+                                                                                   
                                                                                 </tr>
                                                                             </thead>
                             
@@ -687,12 +670,11 @@
                             
                             
                                                                                         <td>
-                                                                                            <a href="#" class="info tooltip-info " data-placement="right"  data-rel="tooltip" title="Ir a Expediente"    ><i class="ace-icon fa fa-folder-open-o bigger-140"  ></i> FG012017</a>
+                                                                                            <a href="#" class="info tooltip-info " data-placement="right"   ><i class="ace-icon fa fa-folder-open-o bigger-140"  ></i> respaldo-sicmedic-18012019-075649-am</a>
                                                                                         </td>
                                 
-                                                                                        <td>MAURICIO FUNES QUINTALLINA</td>
+                                                                                        <td>18/enero/2019 07:56:49 am</td>
                                 
-                                                                                        <td>66</td>
                                 
                                 
                                 
@@ -701,532 +683,56 @@
                                 
                                                                                             <div class="hidden-sm hidden-xs action-buttons">
                                 
-                                                                                                    <a class="info tooltip-info" href="#" data-rel="tooltip"  title="Perfil" data-toggle="modal" data-target="#modal-perfil">
-                                                                                                            <i class="ace-icon fa fa-user bigger-180"></i>
-                                                                                                    </a>
-                                                                                                
-                                
-                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="Modificar" data-toggle="modal" data-target="#modal-modificar">
-                                                                                                    <i class="ace-icon fa fa-pencil bigger-180"></i>
-                                                                                                </a>
-                                
-                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Dar Baja">
-                                                                                                    <i class="ace-icon fa fa-arrow-down bigger-180"></i>
-                                                                                                </a>
-                                                                                            </div>
-                                
-                                                                                            <div class="hidden-md hidden-lg">
-                                                                                                <div class="inline pos-rel">
-                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                        </button>
-                                
-                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                        <li>
-                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                <span class="blue">
-                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                    </span>
-                                                                                                            </a>
-                                                                                                        </li>
-                                
-                                                                                                        <li>
-                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                <span class="green">
-                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                    </span>
-                                                                                                            </a>
-                                                                                                        </li>
-                                
-                                                                                                        <li>
-                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                <span class="red">
-                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                                    </span>
-                                                                                                            </a>
-                                                                                                        </li>
-                                                                                                    </ul>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                
-                                                                                    </tr>
-                                                                                    <tr role="row" class="odd active">
-                            
-                            
-                                                                                            <td>
-                                                                                                <a href="#" class="info tooltip-info" data-placement="right"   data-rel="tooltip" title="Ir a Expediente"    ><i class="ace-icon fa fa-folder-open-o bigger-140"  ></i> FG012017</a>
-                                                                                            </td>
-                                    
-                                                                                            <td>JAZMIN BEATRIZ FLORES GUZMAN</td>
-                                    
-                                                                                            <td>66</td>
-                                    
-                                    
-                                    
-                                                                                            <td>
-                                                                                                
-                                    
-                                                                                                <div class="hidden-sm hidden-xs action-buttons">
-                                    
-                                                                                                        <a class="info tooltip-info" href="#" data-rel="tooltip" title="Perfil">
-                                                                                                                <i class="ace-icon fa fa-user bigger-180"></i>
-                                                                                                        </a>
-                                                                                                    
-                                    
-                                                                                                    <a class="green tooltip-info" href="#" data-rel="tooltip" title="Modificar">
-                                                                                                        <i class="ace-icon fa fa-pencil bigger-180"></i>
-                                                                                                    </a>
-                                    
-                                                                                                    <a class="red tooltip-info" href="#" data-rel="tooltip" title="Dar Baja">
-                                                                                                        <i class="ace-icon fa fa-arrow-down bigger-180"></i>
-                                                                                                    </a>
-                                                                                                </div>
-                                    
-                                                                                                <div class="hidden-md hidden-lg">
-                                                                                                    <div class="inline pos-rel">
-                                                                                                        <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                            </button>
-                                    
-                                                                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                            <li>
-                                                                                                                <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                    <span class="blue">
-                                                                                                                            <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                        </span>
-                                                                                                                </a>
-                                                                                                            </li>
-                                    
-                                                                                                            <li>
-                                                                                                                <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                    <span class="green">
-                                                                                                                            <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                        </span>
-                                                                                                                </a>
-                                                                                                            </li>
-                                    
-                                                                                                            <li>
-                                                                                                                <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                    <span class="red">
-                                                                                                                            <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                                        </span>
-                                                                                                                </a>
-                                                                                                            </li>
-                                                                                                        </ul>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </td>
-                                    
-                                                                                        </tr>
-                                                                                        <tr role="row" class="odd active">
-                            
-                            
-                                                                                                <td>
-                                                                                                    <a href="#"><i class="ace-icon fa fa-folder-open-o bigger-140"></i> FG012017</a>
-                                                                                                </td>
-                                        
-                                                                                                <td>EVA DE LOS ANGELES GUZMAN AYALA</td>
-                                        
-                                                                                                <td>66</td>
-                                        
-                                        
-                                        
-                                                                                                <td>
-                                                                                                    
-                                        
-                                                                                                    <div class="hidden-sm hidden-xs action-buttons">
-                                        
-                                                                                                            <a class="info tooltip-info" href="#" data-rel="tooltip" title="Perfil">
-                                                                                                                    <i class="ace-icon fa fa-user bigger-180"></i>
-                                                                                                            </a>
-                                                                                                        
-                                        
-                                                                                                        <a class="green tooltip-info" href="#" data-rel="tooltip" title="Modificar">
-                                                                                                            <i class="ace-icon fa fa-pencil bigger-180"></i>
-                                                                                                        </a>
-                                        
-                                                                                                        <a class="red tooltip-info" href="#" data-rel="tooltip" title="Dar Baja">
-                                                                                                            <i class="ace-icon fa fa-arrow-down bigger-180"></i>
-                                                                                                        </a>
-                                                                                                    </div>
-                                        
-                                                                                                    <div class="hidden-md hidden-lg">
-                                                                                                        <div class="inline pos-rel">
-                                                                                                            <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                    <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                                </button>
-                                        
-                                                                                                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                        <span class="blue">
-                                                                                                                                <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                        
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                        <span class="green">
-                                                                                                                                <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                        
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                        <span class="red">
-                                                                                                                                <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                                                                                            </ul>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </td>
-                                        
-                                                                                            </tr>
-                                                                                            <tr role="row" class="odd active">
-                            
-                            
-                                                                                                    <td>
-                                                                                                        <a href="#"><i class="ace-icon fa fa-folder-open-o bigger-140"></i> FG012017</a>
-                                                                                                    </td>
-                                            
-                                                                                                    <td>EMERSON JOSÚE PALACIOS MARRAVILLA </td>
-                                            
-                                                                                                    <td>66</td>
-                                            
-                                            
-                                            
-                                                                                                    <td>
-                                                                                                        
-                                            
-                                                                                                        <div class="hidden-sm hidden-xs action-buttons">
-                                            
-                                                                                                                <a class="info tooltip-info" href="#" data-rel="tooltip" title="Perfil">
-                                                                                                                        <i class="ace-icon fa fa-user bigger-180"></i>
-                                                                                                                </a>
-                                                                                                            
-                                            
-                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="Modificar">
-                                                                                                                <i class="ace-icon fa fa-pencil bigger-180"></i>
-                                                                                                            </a>
-                                            
-                                                                                                            <a class="red tooltip-info" href="#" data-rel="tooltip" title="Dar Baja">
-                                                                                                                <i class="ace-icon fa fa-arrow-down bigger-180"></i>
-                                                                                                            </a>
-                                                                                                        </div>
-                                            
-                                                                                                        <div class="hidden-md hidden-lg">
-                                                                                                            <div class="inline pos-rel">
-                                                                                                                <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                        <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                                    </button>
-                                            
-                                                                                                                <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                                    <li>
-                                                                                                                        <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                            <span class="blue">
-                                                                                                                                    <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                                </span>
-                                                                                                                        </a>
-                                                                                                                    </li>
-                                            
-                                                                                                                    <li>
-                                                                                                                        <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                            <span class="green">
-                                                                                                                                    <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                                </span>
-                                                                                                                        </a>
-                                                                                                                    </li>
-                                            
-                                                                                                                    <li>
-                                                                                                                        <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                            <span class="red">
-                                                                                                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                                                </span>
-                                                                                                                        </a>
-                                                                                                                    </li>
-                                                                                                                </ul>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </td>
-                                            
-                                                                                                </tr>
-                                                                                                <tr role="row" class="odd active">
-                            
-                            
-                                                                                                        <td>
-                                                                                                            <a href="#"><i class="ace-icon fa fa-folder-open-o bigger-140"></i> FG012017</a>
-                                                                                                        </td>
-                                                
-                                                                                                        <td>DAVID FLORES GUZMAN</td>
-                                                
-                                                                                                        <td>24</td>
-                                                
-                                                
-                                                
-                                                                                                        <td>
-                                                                                                            
-                                                
-                                                                                                            <div class="hidden-sm hidden-xs action-buttons">
-                                                
-                                                                                                                    <a class="info tooltip-info" href="#" data-rel="tooltip" title="Perfil">
-                                                                                                                            <i class="ace-icon fa fa-user bigger-180"></i>
-                                                                                                                    </a>
-                                                                                                                
-                                                
-                                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="Modificar">
-                                                                                                                    <i class="ace-icon fa fa-pencil bigger-180"></i>
-                                                                                                                </a>
-                                                
-                                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Dar Baja">
-                                                                                                                    <i class="ace-icon fa fa-arrow-down bigger-180"></i>
-                                                                                                                </a>
-                                                                                                            </div>
-                                                
-                                                                                                            <div class="hidden-md hidden-lg">
-                                                                                                                <div class="inline pos-rel">
-                                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                                        </button>
-                                                
-                                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                                        <li>
-                                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                                <span class="blue">
-                                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                                    </span>
-                                                                                                                            </a>
-                                                                                                                        </li>
-                                                
-                                                                                                                        <li>
-                                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                                <span class="green">
-                                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                                    </span>
-                                                                                                                            </a>
-                                                                                                                        </li>
-                                                
-                                                                                                                        <li>
-                                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                                <span class="red">
-                                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                                                    </span>
-                                                                                                                            </a>
-                                                                                                                        </li>
-                                                                                                                    </ul>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </td>
-                                                
-                                                                                                    </tr>
-                                                                                                     <tr role="row" class="odd active">
-                            
-                            
-                                                                                        <td>
-                                                                                            <a href="#"><i class="ace-icon fa fa-folder-open-o bigger-140"></i> FG012017</a>
-                                                                                        </td>
-                                
-                                                                                        <td>DAVID FLORES GUZMAN</td>
-                                
-                                                                                        <td>24</td>
-                                
-                                
-                                
-                                                                                        <td>
-                                                                                            
-                                
-                                                                                            <div class="hidden-sm hidden-xs action-buttons">
-                                
-                                                                                                    <a class="info tooltip-info" href="#" data-rel="tooltip" title="Perfil">
-                                                                                                            <i class="ace-icon fa fa-user bigger-180"></i>
-                                                                                                    </a>
-                                                                                               
-                                
-                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="Modificar">
-                                                                                                    <i class="ace-icon fa fa-pencil bigger-180"></i>
-                                                                                                </a>
-                                
-                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Dar Baja">
-                                                                                                    <i class="ace-icon fa fa-arrow-down bigger-180"></i>
-                                                                                                </a>
-                                                                                            </div>
-                                
-                                                                                            <div class="hidden-md hidden-lg">
-                                                                                                <div class="inline pos-rel">
-                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                        </button>
-                                
-                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                        <li>
-                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                <span class="blue">
-                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                    </span>
-                                                                                                            </a>
-                                                                                                        </li>
-                                
-                                                                                                        <li>
-                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                <span class="green">
-                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                    </span>
-                                                                                                            </a>
-                                                                                                        </li>
-                                
-                                                                                                        <li>
-                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                <span class="red">
-                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                                    </span>
-                                                                                                            </a>
-                                                                                                        </li>
-                                                                                                    </ul>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                
-                                                                                    </tr>
-                                                                                    <tr role="row" class="odd active">
-                            
-                            
-                                                                                            <td>
-                                                                                                <a href="#"><i class="ace-icon fa fa-folder-open-o bigger-140"></i> FG012017</a>
-                                                                                            </td>
-                                    
-                                                                                            <td>DAVID FLORES GUZMAN</td>
-                                    
-                                                                                            <td>27</td>
-                                    
-                                    
-                                    
-                                                                                            <td>
-                                                                                                
-                                    
-                                                                                                <div class="hidden-sm hidden-xs action-buttons">
-                                    
-                                                                                                        <a class="info tooltip-info" href="#" data-rel="tooltip" title="Perfil">
-                                                                                                                <i class="ace-icon fa fa-user bigger-180"></i>
-                                                                                                        </a>
                                                                                                    
-                                                                                                    <a class="green tooltip-info" href="#" data-rel="tooltip" title="Modificar">
-                                                                                                        <i class="ace-icon fa fa-pencil bigger-180"></i>
-                                                                                                    </a>
-                                    
-                                                                                                    <a class="red tooltip-info" href="#" data-rel="tooltip" title="Dar Baja">
-                                                                                                        <i class="ace-icon fa fa-arrow-down bigger-180"></i>
-                                                                                                    </a>
-                                                                                                </div>
-                                    
-                                                                                                <div class="hidden-md hidden-lg">
-                                                                                                    <div class="inline pos-rel">
-                                                                                                        <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                            </button>
-                                    
-                                                                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                            <li>
-                                                                                                                <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                    <span class="blue">
-                                                                                                                            <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                        </span>
-                                                                                                                </a>
-                                                                                                            </li>
-                                    
-                                                                                                            <li>
-                                                                                                                <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                    <span class="green">
-                                                                                                                            <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                        </span>
-                                                                                                                </a>
-                                                                                                            </li>
-                                    
-                                                                                                            <li>
-                                                                                                                <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                    <span class="red">
-                                                                                                                            <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                                        </span>
-                                                                                                                </a>
-                                                                                                            </li>
-                                                                                                        </ul>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </td>
-                                    
-                                                                                        </tr>
-                                                                                        <tr role="row" class="odd active">
-                            
-                            
-                                                                                                <td>
-                                                                                                    <a href="#"><i class="ace-icon fa fa-folder-open-o bigger-140"></i> FG012017</a>
-                                                                                                </td>
-                                        
-                                                                                                <td>HUGO AGUIRRE ANDASOL BELTRAN</td>
-                                        
-                                                                                                <td>50</td>
-                                        
-                                        
-                                        
-                                                                                                <td>
-                                                                                                    
-                                        
-                                                                                                    <div class="hidden-sm hidden-xs action-buttons">
-                                        
-                                                                                                            <a class="info tooltip-info" href="#" data-rel="tooltip" title="Perfil">
-                                                                                                                    <i class="ace-icon fa fa-user bigger-180"></i>
+                                                                                                
+                                
+                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="restaurar" >
+                                                                                                    <i class="ace-icon fa fa-undo bigger-180"></i>
+                                                                                                </a>
+                                
+                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Eliminar ">
+                                                                                                    <i class="ace-icon fa fa-trash bigger-180"></i>
+                                                                                                </a>
+                                                                                            </div>
+                                
+                                                                                            <div class="hidden-md hidden-lg">
+                                                                                                <div class="inline pos-rel">
+                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                                                                                                        </button>
+                                
+                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+                                                                                                                <span class="blue">
+                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                                    </span>
                                                                                                             </a>
-                                                                                                        
-                                        
-                                                                                                        <a class="green tooltip-info" href="#" data-rel="tooltip" title="Modificar">
-                                                                                                            <i class="ace-icon fa fa-pencil bigger-180"></i>
-                                                                                                        </a>
-                                        
-                                                                                                        <a class="red tooltip-info" href="#" data-rel="tooltip" title="Dar Baja">
-                                                                                                            <i class="ace-icon fa fa-arrow-down bigger-180"></i>
-                                                                                                        </a>
-                                                                                                    </div>
-                                        
-                                                                                                    <div class="hidden-md hidden-lg">
-                                                                                                        <div class="inline pos-rel">
-                                                                                                            <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                                                                                                    <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                                                </button>
-                                        
-                                                                                                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-                                                                                                                        <span class="blue">
-                                                                                                                                <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                        
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
-                                                                                                                        <span class="green">
-                                                                                                                                <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                        
-                                                                                                                <li>
-                                                                                                                    <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
-                                                                                                                        <span class="red">
-                                                                                                                                <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                                            </span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                                                                                            </ul>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </td>
-                                        
-                                                                                            </tr>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
+                                                                                                                <span class="green">
+                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
+                                                                                                                <span class="red">
+                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                
+                                                                                    </tr>
                                                                                     
+                                                                                       
                                                                                     
                                                                                     
                                                                                 
@@ -1333,7 +839,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 										<span class="white">&times;</span>
 									</button>
-                            <strong>Nuevo Paciente</strong>
+                            <strong>Nuevo Respaldo</strong>
                         </div>
                     </div>
                     <!-- CONTENIDO DE MODAL -->
@@ -1345,64 +851,27 @@
 
                             <div class="col-sm-12" style="margin-top: 10px">
                                     <div class="tabbable">
-                                        <ul class="nav nav-tabs" id="myTab">
-                                            <li class="active">
-                                                <a data-toggle="tab" href="#home">
-                                                    <i class="green ace-icon fa fa-user bigger-120"></i>
-                                                    Datos Basicos
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a data-toggle="tab" href="#messages">
-                                                        <i class="green ace-icon fa fa-phone bigger-120"></i>
-                                                    Datos de Contacto
-                                                    <span class="badge badge-danger"></span>
-                                                </a>
-                                            </li>
-
-                                            
-                                        </ul>
+                                        
                                         
                                         <div class="tab-content">
                                             <div id="home" class="tab-pane fade in active">
 
                                                     <div class="form-group col-lg-6">
-                                                            <label for="inputName">Nombres</label>
+                                                            <label for="inputName">Nombre Archivo</label>
                                                             <input type="text" class="form-control" id="inputName" placeholder="" />
                                                         </div>
                                                     
                                                         <div class="form-group col-lg-6">
-                                                            <label for="inputName">Apellidos</label>
+                                                            <label for="inputName">Fecha y Hora </label>
                                                             <input type="text" class="form-control" id="inputName" placeholder="" />
                                                         </div>
 
-                                                        <div class="form-group col-lg-6">
-                                                                <label for="inputMessage"><i class="fa fa-male bigger-110"></i> Género</label>
-                                                                <select class="form-control " id="form-field-select-1">
-                                                                        <option value="AL">Masculino</option>
-                                                                        <option value="AK">Femenino</option>		
-                                                                </select>
-                                                        </div>
+                                                        
 
-                                                        <div class="form-group col-lg-6">
-                                                                <label for="inputName"><i class="fa fa-calendar bigger-110"></i> Fecha de nacimiento</label>
-                                                                <input class="form-control date-picker input-mask-date" id="form-field-mask-1" type="text" data-date-format="dd-mm-yyyy">  
-                                                        </div>
+                                                       
 
                                                         
-                                                                <div class="form-group col-lg-6">
-
-                                                                        <label for="inputName"><i class="fa fa-credit-card bigger-110"></i> Documento de Identificación</label>
-                                                                        <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                            
-                                                                    </div>
-                                                                    <div class="form-group col-lg-6">
-
-                                                                            <label for="inputName">Nombre del Encargado</label>
-                                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
                                                                 
-                                                                        </div>
 
 
                                                         
@@ -1470,7 +939,7 @@
 
                         <button class="btn btn-primary btn-white btn-round pull-left " style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
 
-								<img src="btn-agregar.png" style="width: 30px;height: 30px">  <strong>Guardar</strong>
+								<img src="btn-agregar.png" style="width: 30px;height: 30px">  <strong>Crear</strong>
 
 								</button>
 
