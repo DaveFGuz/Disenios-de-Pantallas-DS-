@@ -628,26 +628,45 @@
                             
                                                                         <div class="row"  >
                             
-                                                                            <div class="col-xs-8">
+                                                                            
 
-                                                                                    <div class="col-xs-3">
-                                                                                <div class="dataTables_length" id="dynamic-table_length" >
-                                                                                    <label>mostrar
+                                                                                    <div class="col-xs-3" >
+                                                                                
+                                                                                    <label>Mostrar
                                                                                             <select name="dynamic-table_length"  class="form-control form-group">
-                                                                                            <option value="10">10</option><option value="25">25</option><option value="50">50</option>
-                                                                                            <option value="100">100</option></select> 
-                                                                                            Registros</label>
-                                                                                </div>
+                                                                                            <option value="10">10</option>
+                                                                                            <option value="25">25</option>
+                                                                                            <option value="50">50</option>
+                                                                                            <option value="100">100</option>
+                                                                                            </select> 
+                                                                                            Registros
+                                                                                    </label>
+
                                                                                     </div>
-                                                                                    <div class="col-xs-4">
-                                                                                <div class="dataTables_length" id="dynamic-table_length">
-                                                                                        <label>ESTADO
-                                                                                                        <select  aria-controls="dynamic-table" class="form-control input-sm">
-                                                                                                        <option value="10">de Alta</option>
-                                                                                                        <option value="100">de Baja</option></select> 
-                                                                                                        </label>
-                                                                                    </div>
-                                                                                </div>
+                                                                               
+                                                                                
+                                                                                    <div class="col-xs-3" >
+                                                                                
+                                                                                            <label>Estado
+                                                                                                    <select name="dynamic-table_length dataTables_filter"  class="form-control form-group">
+                                                                                                    <option value="10">Baja</option>
+                                                                                                    <option value="25">Alta</option>
+                                                                                                    
+                                                                                                    </select> 
+                                                                                                    
+                                                                                            </label>
+        
+                                                                                            </div>
+
+                                                                                    <div class="col-xs-6">
+                                                                                            <div id="dynamic-table_filter" class="dataTables_filter">
+                                                                                                <label>Busqueda:
+                                                                                                    <input type="text" style="width: 60%;" class="form-control input-sm" placeholder="" 
+                                                                                                 ></label>
+                                                                                               
+                                        
+                                        
+                                                                                        </div>
                             
                                                                             </div>
                             
@@ -656,16 +675,9 @@
                                                                             
                             
                             
-                                                                            <div class="col-xs-4">
-                                                                                <div id="dynamic-table_filter" class="dataTables_filter">
-                                                                                    <label>Buscar:
-                                                                                        <input type="search" class="form-control input-sm" placeholder="" 
-                                                                                        aria-controls="dynamic-table"></label></div>
+                                                                            
                             
-                            
-                                                                            </div>
-                            
-                                                                        </div>
+                                                                        
                             
                                                                         <!--Fin Filtros de Tabla-->
                             
@@ -1327,7 +1339,7 @@
 
         <div id="modal-table" class="modal fade" tabindex="-1">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content" >
                     <div class="modal-header no-padding">
                         <div class="table-header" style="background: #2aa5a5">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
@@ -1349,14 +1361,14 @@
                                             <li class="active">
                                                 <a data-toggle="tab" href="#home">
                                                     <i class="green ace-icon fa fa-user bigger-120"></i>
-                                                    Datos Basicos
+                                                    Paciente
                                                 </a>
                                             </li>
 
                                             <li>
                                                 <a data-toggle="tab" href="#messages">
                                                         <i class="green ace-icon fa fa-phone bigger-120"></i>
-                                                    Datos de Contacto
+                                                   Responsable
                                                     <span class="badge badge-danger"></span>
                                                 </a>
                                             </li>
@@ -1364,9 +1376,13 @@
                                             
                                         </ul>
                                         
-                                        <div class="tab-content">
-                                            <div id="home" class="tab-pane fade in active">
+                                        <div class="tab-content" >
+                                            <div id="home" class="tab-pane fade in active" >
+                                                
+                                                    <strong>Datos Generales </strong>
 
+
+                                                    <div class="tab-content" >
                                                     <div class="form-group col-lg-6">
                                                             <label for="inputName">Nombres</label>
                                                             <input type="text" class="form-control" id="inputName" placeholder="" />
@@ -1390,19 +1406,57 @@
                                                                 <input class="form-control date-picker input-mask-date" id="form-field-mask-1" type="text" data-date-format="dd-mm-yyyy">  
                                                         </div>
 
-                                                        
-                                                                <div class="form-group col-lg-6">
+                                                         <div class="form-group col-lg-6">
 
                                                                         <label for="inputName"><i class="fa fa-credit-card bigger-110"></i> Documento de Identificación</label>
                                                                         <input type="text" class="form-control" id="inputName" placeholder="" />
                                                             
-                                                                    </div>
-                                                                    <div class="form-group col-lg-6">
+                                                        </div>
+                                                                    
+                                                                        <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                                         <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                                        </div>
+                                                        <br>
 
-                                                                            <label for="inputName">Nombre del Encargado</label>
-                                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                        <strong>Datos de Contacto</strong>
+                                                        <div class="tab-content">
+                                                                <div class="form-group col-lg-3">
+
+                                                                        <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 1</label>
+                                                                        
+                                                                           
+                                                            
+                                                                            <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                        
+                                                            
+                                                            
+                                                                    </div>
+            
+                                                                    <div class="form-group col-lg-3">
+            
+                                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 2</label>
+                                                                            
+                                                                               
+                                                                
+                                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                            
+                                                                
                                                                 
                                                                         </div>
+                                                                        <div class="form-group col-lg-6">
+                                                                                <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo electrónico(opcional)</label>
+                                                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                            </div>
+                                                                            <div class="form-group col-lg-12">
+            
+                                                                                    <label for="inputName"><i class="ace-icon fa fa-home"></i> Dirección</label>
+                                                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                                </div>
+            
+                                                                                <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                                               
+                                                        </div>
 
 
                                                         
@@ -1411,44 +1465,77 @@
                                            
                                             </div>
 
-                                            <div id="messages" class="tab-pane fade">
+                                            <div id="messages" class="tab-pane fade ">
+                                                
+                                                    <strong>Datos Generales </strong>
 
-                                                    <div class="form-group col-lg-3">
 
-                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 1</label>
-                                                            
-                                                               
-                                                
-                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
-                                                            
-                                                
-                                                
+                                                    <div class="tab-content">
+                                                    <div class="form-group col-lg-6">
+                                                            <label for="inputName">Nombres</label>
+                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                        </div>
+                                                    
+                                                        <div class="form-group col-lg-6">
+                                                            <label for="inputName">Apellidos</label>
+                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
                                                         </div>
 
-                                                        <div class="form-group col-lg-3">
+                                                        
 
-                                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 2</label>
-                                                                
-                                                                   
-                                                    
-                                                                    <input class="form-control input-mask-phone" type="text" id="telefono" />
-                                                                
-                                                    
-                                                    
-                                                            </div>
-                                                            <div class="form-group col-lg-6">
-                                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo electrónico(opcional)</label>
-                                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                                </div>
-                                                                <div class="form-group col-lg-12">
+                                                        
 
-                                                                        <label for="inputName"><i class="ace-icon fa fa-home"></i> Dirección</label>
+                                                         <div class="form-group col-lg-6">
+
+                                                                        <label for="inputName"><i class="fa fa-credit-card bigger-110"></i> Documento de Identificación</label>
                                                                         <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                                    </div>
-
-                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
-                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                            
+                                                        </div>
+                                                                    
+                                                                        <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                                         <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
                                            
+                                                        </div>
+                                                        <br>
+
+                                                        <strong>Datos de Contacto</strong>
+                                                        <div class="tab-content">
+                                                                <div class="form-group col-lg-3">
+                                                                    
+
+                                                                        <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 1</label>
+                                                                        
+                                                                           
+                                                            
+                                                                            <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                        
+                                                            
+                                                            
+                                                                    </div>
+            
+                                                                    <div class="form-group col-lg-3">
+            
+                                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 2</label>
+                                                                            
+                                                                               
+                                                                
+                                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                            
+                                                                
+                                                                
+                                                                        </div>
+                                                                        
+                                                                           
+            
+                                                                                <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                                                <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                                               
+                                                        </div>
+
+
+                                                        
+
+                                                 
                                             </div>
 
                                             
@@ -1689,7 +1776,7 @@
 
 
                             <div class="col-sm-12" style="margin-top: 10px">
-                                    <div class="tabbable">
+                                    
                                         
                                         
                                         <div class="tab-content">
@@ -1766,8 +1853,7 @@
                                             
                                         </div>
                                     </div>
-                                </div>
-
+                                
 
 
                         </form>
