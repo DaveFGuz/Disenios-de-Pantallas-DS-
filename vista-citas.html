@@ -97,7 +97,7 @@
                                 <ul class="nav nav-tabs">
                                     <li class="active">
                                         <a data-toggle="tab" href="#navbar-tasks">
-												Alertas  de Citas
+												Notificacion de Citas
 												<span class="badge badge-danger">4</span>
 											</a>
                                     </li>
@@ -252,7 +252,7 @@
                                 <ul class="nav nav-tabs">
                                     <li class="active">
                                         <a data-toggle="tab" href="#navbar-tasks">
-												Alertas  de medicamentos
+												Notificación de Medicamentos
 												<span class="badge badge-danger">4</span>
 											</a>
                                     </li>
@@ -459,9 +459,9 @@
             <ul class="nav nav-list">
 
 
-                <li class="  hover">
+                <li class="hover">
                     <a href="" onclick="location.href='vista-paciente.html'" class="dropdown-toggle">
-                        <i class="menu-icon fa fa-user"></i>
+                        <i class="menu-icon fa fa-group"></i>
                         <span class="menu-text">
 								&nbspPacientes&nbsp
 							</span>
@@ -570,7 +570,7 @@
                             
                             <small>
                                     
-                                <span class="label label-lg label-pink arrowed-right " style="width: 150px;height: 25px;" > <i class="fa fa-list-alt bigger-140 pull-left "></i> <strong class="pull-left">LISTADO</strong></span>
+                                <span class="label label-lg label-primary arrowed-right " style="width: 150px;height: 25px;" > <i class="fa fa-calendar-check-o bigger-130 pull-left "></i> <strong class="pull-left">CITAS</strong></span>
                                      
                                      
 									
@@ -683,11 +683,11 @@
                             
                                                                             <thead >
                                                                                 <tr role="row" style="background: #ffff">
-                                                                                    <th style="width: 5%"><strong>#</strong></th>
+                                                                                    <th style="width: 3%"><strong>ORDEN</strong></th>
                                                                                     <th style="width: 40%"><strong>PACIENTE</strong></th>
                                                                                     <td style="width: 20%"><strong>FECHA Y HORA</strong></td>
-                                                                                    <td style="width: 5%"><strong>ESTADO</strong></td>
-                                                                                    <th style="width: 8%"><strong>ACCIÓN</strong></th>
+                                                                                    <td style="width: 2%"><strong>ESTADO</strong></td>
+                                                                                    <th style="width: 6%"><strong>ACCIÓN</strong></th>
                                                                                 </tr>
                                                                             </thead>
                             
@@ -701,9 +701,12 @@
                                         
                                                                                                 <td> <i class="fa fa-user bigger-150"></i> JOSE ALEXANDER CORLETO CHAVEX</td>
                                         
-                                                                                                <td><i class="fa fa-calendar"></i>  21/09/2016  <i class="fa fa-clock-o"></i>  09:30:00 AM </td>
+                                                                                                <td><span class="label label-primary arrowed-in arrowed-in-right">
+                                                                                                        <i class="fa fa-calendar "></i>  21/09/2016  <i class="fa fa-clock-o">
 
-                                                                                                <td><a class=" btn-success" style="padding: 5px">EN ESPERA</a></td>
+                                                                                                        </i>  09:30:00 AM </span></td>
+
+                                                                                                <td><span class="label label-success arrowed-in arrowed-in-right">EN ESPERA</span>
                                         
                                         
                                         
@@ -713,7 +716,7 @@
                                                                                                     <div class="hidden-sm hidden-xs action-buttons">
                                         
                                                                                                             
-                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
+                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="Iniciar Consulta">
                                                                                                                     <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
                                                                                                                 </a> 
                                                                                                         <a class="red tooltip-info" href="#" data-rel="tooltip" title="cancelar">
@@ -766,9 +769,12 @@
                                                 
                                                                                                         <td><i class="fa fa-user bigger-150"></i> MAURICIO FUNES MICHI CARTEGENA</td>
                                                 
-                                                                                                        <td><i class="fa fa-calendar"></i>  21/09/2016  <i class="fa fa-clock-o"></i>  09:30:00 AM </td>
+                                                                                                        <td><span class="label label-primary arrowed-in arrowed-in-right">
+                                                                                                            <i class="fa fa-calendar "></i>  21/09/2016  <i class="fa fa-clock-o">
+
+                                                                                                            </i>  09:30:00 AM </span></td>
         
-                                                                                                        <td><a class=" btn-success" style="padding: 5px">EN ESPERA</a></td>
+                                                                                                        <td><span class="label label-success arrowed-in arrowed-in-right">EN ESPERA</span>
                                                 
                                                 
                                                 
@@ -777,7 +783,7 @@
                                                 
                                                                                                             <div class="hidden-sm hidden-xs action-buttons">
                                                 
-                                                                                                                    <a class="green tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
+                                                                                                                    <a class="green tooltip-info" href="#" data-rel="tooltip" title="Iniciar Consulta">
                                                                                                                             <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
                                                                                                                         </a> 
                                                 
@@ -831,9 +837,12 @@
                                                         
                                                                                                                 <td><i class="fa fa-user bigger-150"></i> EVA DE LOS ANGELES GUXMAN AYALA</td>
                                                         
-                                                                                                                <td><i class="fa fa-calendar"></i>  21/09/2016  <i class="fa fa-clock-o"></i>  09:30:00 AM</td>
-                
-                                                                                                                <td><a class=" btn-success" style="padding: 5px">EN ESPERA</a></td>
+                                                                                                                <td><span class="label label-primary arrowed-in arrowed-in-right">
+                                                                                                                        <i class="fa fa-calendar "></i>  21/09/2016  <i class="fa fa-clock-o">
+            
+                                                                                                                        </i>  09:30:00 AM </span></td>
+
+                                                                                                                <td><span class="label label-success arrowed-in arrowed-in-right">EN ESPERA</span>
                                                         
                                                         
                                                         
@@ -842,7 +851,7 @@
                                                         
                                                                                                                     <div class="hidden-sm hidden-xs action-buttons">
                                                         
-                                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
+                                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="Iniciar Consulta">
                                                                                                                                     <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
                                                                                                                                 </a> 
                                                         
@@ -895,10 +904,13 @@
                                                                                                                         
                                                                 
                                                                                                                         <td><i class="fa fa-user bigger-150"></i> OSCAR RENE  BELTRAN MUNOZ </td>
-                                                                
-                                                                                                                        <td><i class="fa fa-calendar"></i>  21/09/2016  <i class="fa fa-clock-o"></i>  09:30:00 AM </td>
-                        
-                                                                                                                        <td><a class=" btn-danger" style="padding: 5px">PENDIENTE</a></td>
+
+                                                                                                                        <td><span class="label label-primary arrowed-in arrowed-in-right">
+                                                                                                                                <i class="fa fa-calendar "></i>  21/09/2016  <i class="fa fa-clock-o">
+                    
+                                                                                                                                </i>  09:30:00 AM </span></td>
+                                                                                                                        
+                                                                                                                        <td><span class="label label-success arrowed-in arrowed-in-right">EN ESPERA</span>
                                                                 
                                                                 
                                                                 
@@ -907,7 +919,7 @@
                                                                 
                                                                                                                             <div class="hidden-sm hidden-xs action-buttons">
                                                                 
-                                                                                                                                    <a class="green tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
+                                                                                                                                    <a class="green tooltip-info" href="#" data-rel="tooltip" title="Iniciar Consulta">
                                                                                                                                             <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
                                                                                                                                         </a> 
                                                                 
@@ -961,9 +973,12 @@
                                         
                                                                                                 <td><i class="fa fa-user bigger-150"></i> ANDREA FLORES CORDOVA</td>
                                         
-                                                                                                <td><i class="fa fa-calendar"></i>  21/09/2016  <i class="fa fa-clock-o"></i>  09:30:00 AM </td>
+                                                                                                <td><span class="label label-primary arrowed-in arrowed-in-right">
+                                                                                                        <i class="fa fa-calendar "></i>  21/09/2016  <i class="fa fa-clock-o">
 
-                                                                                                <td><a class=" btn-danger" style="padding: 5px">PENDIENTE</a></td>
+                                                                                                        </i>  09:30:00 AM </span></td>
+
+                                                                                                <td><span class="label label-warning arrowed-in arrowed-in-right">PENDIENTE</span></td>
                                         
                                         
                                         
@@ -972,7 +987,7 @@
                                         
                                                                                                     <div class="hidden-sm hidden-xs action-buttons">
                                         
-                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="ir a consulta">
+                                                                                                            <a class="green tooltip-info" href="#" data-rel="tooltip" title="Iniciar Consulta">
                                                                                                                     <i class="ace-icon glyphicon glyphicon-folder-open bigger-180"></i>
                                                                                                                 </a> 
                                         
@@ -1117,7 +1132,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 										<span class="white">&times;</span>
 									</button>
-                            <strong>Nueva Cita</strong>
+                            <strong><i class="fa fa-calendar-check-o"></i> Nueva Cita</strong>
                         </div>
                     </div>
                     <!-- CONTENIDO DE MODAL -->
@@ -1139,7 +1154,7 @@
                                             <div id="home" class="tab-pane fade in active">
 
                                                 <div class="form-group col-lg-12">
-                                                    <label for="state"><i class="fa fa-user"></i> Paciente</label>
+                                                    <label for="state"><i class="fa fa-group"></i> Paciente</label>
                                                 <br>
                                                         <select multiple="" id="state" name="state"  class="select2" style="width: 500px" data-placeholder="buscar paciente">
                                                             <option value="AL">FG001017 DAVID FLORES GUZMAN</option>
