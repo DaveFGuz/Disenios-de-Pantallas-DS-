@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
-    <title>Paciente - SICMEDIC</title>
+    <title>Medicamentos - SICMEDIC</title>
 
     <meta name="description" content="top menu &amp; navigation" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -477,7 +477,7 @@
             <ul class="nav nav-list">
 
 
-                <li class=" active hover">
+                <li class="hover">
                     <a href="" onclick="location.href='vista-paciente.html'" class="dropdown-toggle">
                         <i class="menu-icon fa fa-group"></i>
                         <span class="menu-text">
@@ -505,8 +505,8 @@
 
                 </li>
 
-                <li class="hover">
-                    <a href="" onclick="location.href='vista-medicamentos.html'" class="dropdown-toggle">
+                <li class="active hover">
+                    <a href="#" class="dropdown-toggle">
                         <i class="menu-icon fa fa-medkit"></i>
                         <span class="menu-text"> Medicamentos </span>
 
@@ -588,8 +588,8 @@
                             <small>
                                 <span class="label label-lg label-primary arrowed-right "
                                     style="width: 150px;height: 25px;"> <i
-                                        class="fa fa-group bigger-140 pull-left "></i> <strong
-                                        class="pull-left">PACIENTES</strong></span>
+                                        class="fa fa-medkit bigger-130 pull-left "></i> <strong
+                                        class="pull-left">MEDICAMENTOS</strong></span>
 
 
                             </small>
@@ -673,7 +673,7 @@
 
                                                                     <div class="col-lg-3 col-xs-6">
 
-                                                                        <label>mostrar
+                                                                        <label>Mostrar
                                                                             <select name="dynamic-table_length"
                                                                                 class="form-control form-group">
                                                                                 <option value="10">10</option>
@@ -681,7 +681,7 @@
                                                                                 <option value="50">50</option>
                                                                                 <option value="100">100</option>
                                                                             </select>
-                                                                            registros
+                                                                            Registros
                                                                         </label>
 
                                                                     </div>
@@ -689,12 +689,12 @@
 
                                                                     <div class="col-lg-3 col-xs-6">
 
-                                                                        <label>
+                                                                        <label>Estado
                                                                             <select
                                                                                 name="dynamic-table_length dataTables_filter"
                                                                                 class="form-control form-group">
-                                                                                <option value="10">Paciente Activos</option>
-                                                                                <option value="25">Pacientes Inactivos</option>
+                                                                                <option value="10">Activos</option>
+                                                                                <option value="25">Inactivos</option>
 
                                                                             </select>
 
@@ -1673,7 +1673,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                                 <span class="white">&times;</span>
                             </button>
-                            <strong><i class="fa fa-user"></i> Nuevo Paciente</strong>
+                            <strong><i class="fa fa-user"></i> Nuevo Medicamento</strong>
                         </div>
                     </div>
                 
@@ -1685,20 +1685,20 @@
 
 
 
-                                <div class="" style="height:500px;overflow-y: scroll;">
+                                <div class="tab-content" style="height:495px;overflow-y: scroll;">
                                     <div id="home" class="tab-pane fade in active">
 
-                                        <strong>Información General </strong>
+                                        <strong>Datos de Personales </strong>
 
 
-                                        <div class="tab-content" style="height: 400px;">
+                                        <div class="tab-content" style="height: 240px;">
                                             <div class="form-group col-lg-6">
-                                                <label for="inputName">Nombre(s) <a>*</a></label>
+                                                <label for="inputName">Nombres</label>
                                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                                             </div>
 
                                             <div class="form-group col-lg-6">
-                                                <label for="inputName">Apellido(s) <a>*</a></label>
+                                                <label for="inputName">Apellidos</label>
                                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                                             </div>
 
@@ -1713,7 +1713,7 @@
 
                                             <div class="form-group col-lg-6">
                                                 <label for="inputName"><i class="fa fa-calendar bigger-110"></i> Fecha
-                                                    de Nacimiento <a>*</a></label>
+                                                    de nacimiento</label>
                                                 <input class="form-control date-picker input-mask-date"
                                                     id="form-field-mask-1" type="text" data-date-format="dd-mm-yyyy">
                                             </div>
@@ -1721,73 +1721,78 @@
                                             <div class="form-group col-lg-6">
 
                                                 <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
-                                                    Número de Identidad Personal</label>
+                                                    Documento de Identificación</label>
                                                 <input type="text" class="form-control" id="inputName" placeholder="" />
 
                                             </div>
-
-                                            <div class="form-group col-lg-6">
-                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Email </label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-
-
-                                                <div class="form-group col-lg-6">
-
-                                                        <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
-                                                             <a> *</a></label>
-        
-        
-        
-                                                        <input class="form-control input-mask-phone" type="text"
-                                                            id="telefono" />
-        
-    
-                                                    </div>
-
-                                                    <div class="form-group col-lg-6">
-
-                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono móvil
-                                                                 <a> </a></label>
-            
-            
-            
-                                                            <input class="form-control input-mask-phone" type="text"
-                                                                id="telefono" />
-            
-            
-            
-                                                        </div>
-
-                                                        <div class="form-group col-lg-12">
-
-                                                                <label for="inputName"><i class="ace-icon fa fa-home"></i>
-                                                                    Dirección</label>
-                                                                <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                            </div>
 
 
                                         </div>
                                         <br>
-                                        
-                                        
+
+                                        <strong>Datos de Contacto</strong>
+                                        <div class="tab-content" style="height: 170px;">
+                                            <div class="form-group col-lg-3">
+
+                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
+                                                    1</label>
+
+
+
+                                                <input class="form-control input-mask-phone" type="text"
+                                                    id="telefono" />
+
+
+
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+
+                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
+                                                    2</label>
+
+
+
+                                                <input class="form-control input-mask-phone" type="text"
+                                                    id="telefono" />
+
+
+
+                                            </div>
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo
+                                                    electrónico(opcional)</label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                            </div>
+                                            <div class="form-group col-lg-12">
+
+                                                <label for="inputName"><i class="ace-icon fa fa-home"></i>
+                                                    Dirección</label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                            </div>
+
+                                            <p style="visibility: hidden">Raw denim you probably haven't heard of them
+                                                jean shorts Austin.</p>
+
+                                        </div>
+                                        <br>
 
                                         <strong>Datos de Encargado </strong>
 
 
-                                        <div class="tab-content" style="height: 250px">
-                                            <div class="form-group col-lg-6">
-                                                <label for="inputName">Nombre(s) <a>*</a></label>
+                                        <div class="tab-content" style="height: 175px">
+                                            <div class="form-group col-lg-4">
+                                                <label for="inputName">Nombres</label>
                                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                                             </div>
 
-                                            <div class="form-group col-lg-6">
-                                                <label for="inputName">Apellido(s) <a>*</a></label>
+                                            <div class="form-group col-lg-4">
+                                                <label for="inputName">Apellidos</label>
                                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                                             </div>
 
-                                            <div class="form-group col-lg-6">
-                                                <label for="inputMessage"><i class="fa fa-male bigger-110"></i>  Es </label>
+                                            <div class="form-group col-lg-4">
+                                                <label for="inputMessage"><i class="fa fa-male bigger-110"></i> </label>
                                                 <select class="form-control " id="form-field-select-1">
                                                     <option value="AL">Conocido/a</option>
                                                     <option value="AK">Padre</option>
@@ -1804,14 +1809,14 @@
                                             <div class="form-group col-lg-6">
 
                                                 <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
-                                                    Número de Identidad Personal</label>
+                                                    DUI</label>
                                                 <input type="text" class="form-control" id="inputName" placeholder="" />
 
                                             </div>
                                             <div class="form-group col-lg-6">
 
 
-                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono <a>*</a>
+                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
                                                 </label>
 
 
@@ -1822,20 +1827,6 @@
 
 
                                             </div>
-                                            <div class="form-group col-lg-6">
-
-
-                                                    <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono movil 
-                                                    </label>
-    
-    
-    
-                                                    <input class="form-control input-mask-phone" type="text"
-                                                        id="telefono" />
-    
-    
-    
-                                                </div>
 
                                             </div>
 
@@ -2082,7 +2073,7 @@
     
                                                 <div class="form-group col-lg-6">
                                                     <label for="inputMessage"><i class="fa fa-male bigger-110"></i>
-                                                        Sexo <a>*</a></label>
+                                                        Género</label>
                                                     <select class="form-control " id="form-field-select-1">
                                                         <option value="AL">Masculino</option>
                                                         <option value="AK">Femenino</option>
@@ -2113,7 +2104,7 @@
                                                 <div class="form-group col-lg-3">
     
                                                     <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
-                                                        </label>
+                                                        1</label>
     
     
     
@@ -2127,7 +2118,7 @@
                                                 <div class="form-group col-lg-3">
     
                                                     <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
-                                                        móvil</label>
+                                                        2</label>
     
     
     
