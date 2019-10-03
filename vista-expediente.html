@@ -488,8 +488,8 @@
                     
                 </li>
 
-                <li class="hover">
-                    <a href="vista-medicamentos.html" class="dropdown-toggle">
+                <li class="hover" onclick="location.href='vista-medicamentos.html'">
+                    <a  class="dropdown-toggle">
                         <i class="menu-icon fa fa-medkit"></i>
                         <span class="menu-text"> Medicamentos </span>
 
@@ -569,7 +569,7 @@
                             <div class="widget-header widget-header-large">
                                     <h3 class="widget-title grey lighter">
                                         <i class="ace-icon fa fa-folder-open blue"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                                            Expediente Clinico de Oscar Emerson Beltran 
+                                            Expediente Clinico de JAZMIN BEATRIZ FLORES GUZMAN 
                                             </font></font></h3>
 
                                     
@@ -1125,7 +1125,7 @@
                                                                                 <div class="row tab-content " style="margin: 0.1px" >
                                                                                         <div class="col-xs-6">
                                                                                             <div class="dataTables_info" id="dynamic-table_info" role="status" aria-live="polite">
-                                                                                                mostrando 1 a 10 de 23 registros
+                                                                                                mostrando 1 a 1 de 1 registros
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="col-xs-6">
@@ -1262,34 +1262,33 @@
 
                                                                             <div class="row">
                                                                             <div class="col-lg-6">
-                                                                            <dt>Presion Arterial (mm Hg)</dt>
-                                                                            <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                            <dt>Presion Arterial</dt>
+                                                                            <input class="form-control input-mask-date" type="text" id="telefono" />
                                                                             </div>
                                                                             <div class="col-lg-6">
-                                                                            <dt>Respiración( rpm)</dt>
-                                                                            <input class="form-control input-mask-phone" type="text" id="telefono" />
-                                                                            </div>
+                                                                                <dt>Pulso</dt>
+                                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                                </div>
+                                                                            
                                                                          </div>
                                                                          <br>
                                                                          <div class="row">
-                                                                                <div class="col-lg-6">
-                                                                                <dt>Pulso (lpm)</dt>
-                                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
-                                                                                </div>
+                                                                                
                                                                                 <div class="col-lg-6">
                                                                                 <dt>Temperatura Corporal (ºC)</dt>
-                                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                                <input class="form-control input-mask-temo" type="text" id="telefono" />
                                                                                 </div>
+                                                                                <div class="col-lg-6">
+                                                                                    <dt>Peso</dt>
+                                                                                    <input class="form-control input-mask-peso" type="text" id="telefono" />
+                                                                                    </div>
                                                                              </div>
                                                                              <br>
                                                                              <div class="row">
+                                                                                    
                                                                                     <div class="col-lg-6">
-                                                                                    <dt>Peso (Kg)</dt>
-                                                                                    <input class="form-control input-mask-phone" type="text" id="telefono" />
-                                                                                    </div>
-                                                                                    <div class="col-lg-6">
-                                                                                    <dt>Estatura (cm)</dt>
-                                                                                    <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                                    <dt>Estatura</dt>
+                                                                                    <input class="form-control input-mask-esta" type="text" id="telefono" />
                                                                                     </div>
                                                                                  </div>
                                                                             
@@ -1532,18 +1531,18 @@
                                                                                                         <td >
                                                                                                                 <select id="state" name="state"
                                                                                                                 >
-                                                                                                                <option value="AL" title="50 unidades disponibles">1/2 Tableta</option>
-                                                                                                                <option value="AL" title="50 unidades disponibles">1 Tableta</option>
-                                                                                                                <option value="AL" title="50 unidades disponibles">2 Tabletas</option>
-                                                                                                                <option value="AL" title="50 unidades disponibles">1 Capsula</option>
-                                                                                                                <option value="AL" title="50 unidades disponibles">2 Capsulas</option>
+                                                                                                                <option value="AL" title="50 unidades disponibles">4 Horas</option>
+                                                                                                                <option value="AL" title="50 unidades disponibles">8 Horas</option>
+                                                                                                                <option value="AL" title="50 unidades disponibles">12 Horas</option>
+                                                                                                                <option value="AL" title="50 unidades disponibles">24 Horas</option>
+                                                                                                                <option value="AL" title="50 unidades disponibles">48 Horas</option>
                                                                                                                 
                                                                                                                 </option>
                                                                                                                 
                                                                                                             </select>
                                                                                                         </td>
                                                                                                         
-                                                                                                    <td ><input type="text" style="width: 90%" class="form-control search-query" placeholder="">
+                                                                                                    <td ><input type="text" style="width: 90%" class="form-control input-mask-dia " placeholder="">
                                                                                                     </td>
                                     
                                     
@@ -2002,6 +2001,16 @@
 					*/
 				
 				});
+
+                $.mask.definitions['~']='[+-]';
+				$('.input-mask-date').mask('999/999 mmHg');
+				$('.input-mask-phone').mask('999 ppm');
+                $('.input-mask-temo').mask('99 °C');
+                $('.input-mask-peso').mask('999 Kg');
+                $('.input-mask-esta').mask('999 cm');
+                $('.input-mask-dia').mask('99 d');
+
+				$('.input-mask-eyescript').mask('~9.99 ~9.99 999');
 
         });
     </script>
