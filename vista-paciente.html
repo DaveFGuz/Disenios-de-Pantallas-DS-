@@ -473,6 +473,21 @@
             <ul class="nav nav-list">
 
 
+                    <li class="hover">
+                            <a href="" onclick="location.href='vista-inicio.html'" class="dropdown-toggle">
+                                <i class="menu-icon fa fa-home"></i>
+                                <span class="menu-text">
+                                        &nbsp&nbsp&nbsp&nbsp &nbspInicio&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </span>
+        
+                                <b class="arrow fa fa-angle-down"></b>
+                            </a>
+        
+        
+        
+                        </li>
+
+
                 <li class=" active hover">
                     <a href="" onclick="location.href='vista-paciente.html'" class="dropdown-toggle">
                         <i class="menu-icon fa fa-group"></i>
@@ -745,112 +760,7 @@
                                                                 <tbody>
 
 
-                                                                    <tr role="row" class="odd active">
-
-
-                                                                        <td>
-                                                                            <a href="vista-expediente.html"
-                                                                                class="info tooltip-info "
-                                                                                data-placement="right"
-                                                                                data-rel="tooltip"
-                                                                                title="Ir a Expediente"><i
-                                                                                    class="ace-icon fa fa-folder-open-o bigger-140"></i>
-                                                                                    <strong>AA102019</strong></a>
-                                                                        </td>
-
-                                                                        <td>
-                                                                            MAURICIO FUNES QUINTALLINA</td>
-
-                                                                        <td>66</td>
-
-
-
-                                                                        <td>
-
-
-                                                                            <div
-                                                                                class="hidden-sm hidden-xs action-buttons">
-
-                                                                                <a class="info tooltip-info" href="#"
-                                                                                    data-rel="tooltip" title="Mas Datos"
-                                                                                    data-toggle="modal"
-                                                                                    data-target="#modal-perfil">
-                                                                                    <i
-                                                                                        class="ace-icon fa fa-list bigger-180"></i>
-                                                                                </a>
-
-
-                                                                                <a class="green tooltip-info" href="#"
-                                                                                    data-rel="tooltip" title="Modificar"
-                                                                                    data-toggle="modal"
-                                                                                    data-target="#modal-modificarpaciente">
-                                                                                    <i
-                                                                                        class="ace-icon fa fa-pencil bigger-180"></i>
-                                                                                </a>
-
-                                                                                <a class="red tooltip-info" href="#"
-                                                                                    data-rel="tooltip" title="Dar Baja">
-                                                                                    <i
-                                                                                        class="ace-icon fa fa-arrow-down bigger-180"></i>
-                                                                                </a>
-                                                                            </div>
-
-                                                                            <div class="hidden-md hidden-lg">
-                                                                                <div class="inline pos-rel">
-                                                                                    <button
-                                                                                        class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                                        data-toggle="dropdown"
-                                                                                        data-position="auto">
-                                                                                        <i
-                                                                                            class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                                                    </button>
-
-                                                                                    <ul
-                                                                                        class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                                                        <li>
-                                                                                            <a href="#"
-                                                                                                class="tooltip-info"
-                                                                                                data-rel="tooltip"
-                                                                                                title=""
-                                                                                                data-original-title="View">
-                                                                                                <span class="blue">
-                                                                                                    <i
-                                                                                                        class="ace-icon fa fa-search-plus bigger-120"></i>
-                                                                                                </span>
-                                                                                            </a>
-                                                                                        </li>
-
-                                                                                        <li>
-                                                                                            <a href="#"
-                                                                                                class="tooltip-success"
-                                                                                                data-rel="tooltip"
-                                                                                                title=""
-                                                                                                data-original-title="Edit">
-                                                                                                <span class="green">
-                                                                                                    <i
-                                                                                                        class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                                                                                </span>
-                                                                                            </a>
-                                                                                        </li>
-
-                                                                                        <li>
-                                                                                            <a href="#"
-                                                                                                class="tooltip-error"
-                                                                                                data-rel="tooltip"
-                                                                                                title=""
-                                                                                                data-original-title="Delete">
-                                                                                                <span class="red">
-                                                                                                    <i
-                                                                                                        class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                                </span>
-                                                                                            </a>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-
-                                                                    </tr>
+                                                                  
                                                                     <tr role="row" class="odd active">
 
 
@@ -877,15 +787,24 @@
                                                                                 class="hidden-sm hidden-xs action-buttons">
 
                                                                                 <a class="info tooltip-info" href="#"
-                                                                                    data-rel="tooltip" title="Mas Datos">
+                                                                                    data-rel="tooltip" title="Mas Datos" data-toggle="modal"
+                                                                                    data-target="#modal-infopaciente" >
                                                                                     <i
                                                                                         class="ace-icon fa fa-list bigger-180"></i>
+                                                                                </a>
+
+                                                                                <a class="info tooltip-info" href="vista-expediente.html"
+                                                                                    data-rel="tooltip" title="ir a Expediente"
+                                                                                    >
+                                                                                    <i
+                                                                                        class="ace-icon fa fa-folder-open-o bigger-180"></i>
                                                                                 </a>
 
 
                                                                                 <a class="green tooltip-info" href="#"
                                                                                     data-rel="tooltip"
-                                                                                    title="Modificar">
+                                                                                    title="Modificar" data-toggle="modal"
+                                                                                    data-target="#modal-modificarpaciente">
                                                                                     <i
                                                                                         class="ace-icon fa fa-pencil bigger-180"></i>
                                                                                 </a>
@@ -979,6 +898,12 @@
                                                                                     data-rel="tooltip" title="Mas Datos">
                                                                                     <i
                                                                                         class="ace-icon fa fa-list bigger-180"></i>
+                                                                                </a>
+                                                                                <a class="info tooltip-info" href="vista-expediente.html"
+                                                                                    data-rel="tooltip" title="ir a Expediente"
+                                                                                    >
+                                                                                    <i
+                                                                                        class="ace-icon fa fa-folder-open-o bigger-180"></i>
                                                                                 </a>
 
 
@@ -1079,6 +1004,12 @@
                                                                                     <i
                                                                                         class="ace-icon fa fa-list bigger-180"></i>
                                                                                 </a>
+                                                                                <a class="info tooltip-info" href="vista-expediente.html"
+                                                                                    data-rel="tooltip" title="ir a Expediente"
+                                                                                    >
+                                                                                    <i
+                                                                                        class="ace-icon fa fa-folder-open-o bigger-180"></i>
+                                                                                </a>
 
 
                                                                                 <a class="green tooltip-info" href="#"
@@ -1177,6 +1108,12 @@
                                                                                     data-rel="tooltip" title="Mas Datos">
                                                                                     <i
                                                                                         class="ace-icon fa fa-list bigger-180"></i>
+                                                                                </a>
+                                                                                <a class="info tooltip-info" href="vista-expediente"
+                                                                                    data-rel="tooltip" title="ir a Expediente"
+                                                                                    >
+                                                                                    <i
+                                                                                        class="ace-icon fa fa-folder-open-o bigger-180"></i>
                                                                                 </a>
 
 
@@ -1277,6 +1214,12 @@
                                                                                     <i
                                                                                         class="ace-icon fa fa-list bigger-180"></i>
                                                                                 </a>
+                                                                                <a class="info tooltip-info" href="vista-expediente"
+                                                                                    data-rel="tooltip" title="ir a Expediente"
+                                                                                    >
+                                                                                    <i
+                                                                                        class="ace-icon fa fa-folder-open-o bigger-180"></i>
+                                                                                </a>
 
 
                                                                                 <a class="green tooltip-info" href="#"
@@ -1376,6 +1319,12 @@
                                                                                     <i
                                                                                         class="ace-icon fa fa-list bigger-180"></i>
                                                                                 </a>
+                                                                                <a class="info tooltip-info" href="vista-expediente"
+                                                                                    data-rel="tooltip" title="ir a Expediente"
+                                                                                    >
+                                                                                    <i
+                                                                                        class="ace-icon fa fa-folder-open-o bigger-180"></i>
+                                                                                </a>
 
                                                                                 <a class="green tooltip-info" href="#"
                                                                                     data-rel="tooltip"
@@ -1473,6 +1422,12 @@
                                                                                     data-rel="tooltip" title="Mas Datos">
                                                                                     <i
                                                                                         class="ace-icon fa fa-list bigger-180"></i>
+                                                                                </a>
+                                                                                <a class="info tooltip-info" href="vista-expediente"
+                                                                                    data-rel="tooltip" title="ir a Expediente"
+                                                                                    >
+                                                                                    <i
+                                                                                        class="ace-icon fa fa-folder-open-o bigger-180"></i>
                                                                                 </a>
 
 
@@ -1684,7 +1639,7 @@
                                 <div class="" style="height:500px;overflow-y: scroll;">
                                     <div id="home" class="tab-pane fade in active">
 
-                                        <strong>Información General </strong>
+                                        <strong>Información General <a class="pull-right">(*) Campos Obligatorios</a> </strong>
 
 
                                         <div class="tab-content" style="height: 400px;">
@@ -2035,162 +1990,166 @@
         <!--INICIO VENTANA EMERGENTE DE FORMULARIO PARA MODIFICAR DATOS DE PACIENTES -->
 
         <div id="modal-modificarpaciente" class="modal fade" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header no-padding">
-                            <div class="table-header" style="background: #2aa5a5">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                    <span class="white">&times;</span>
-                                </button>
-                                <strong><i class="fa fa-user"></i> Modificar Paciente</strong>
-                            </div>
+            <div class="modal-dialog" style="width: 50%">
+                <div class="modal-content">
+                    <div class="modal-header no-padding">
+                        <div class="table-header" style="background: #2aa5a5">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <span class="white">&times;</span>
+                            </button>
+                            <strong><i class="fa fa-user"></i> Modificar Paciente </strong>
                         </div>
-                    
-                        <div class="modal-body no-padding" style="background: #fcf8e3">
-                            
-                            <form>
+                    </div>
+                
+                    <div class="modal-body no-padding" style="background: #fcf8e3">
+                        
+                        <form>
+
+                            <div class="col-sm-12" style="margin-top: 10px">
+
+
+
+                                <div class="" style="height:500px;overflow-y: scroll;">
+                                    <div id="home" class="tab-pane fade in active">
+
+                                        <strong>Información General <a class="pull-right">(*) Campos Obligatorios</a> </strong>
+
+
+                                        <div class="tab-content" style="height: 400px;">
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName">Nombre(s) <a>*</a></label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName">Apellido(s) <a>*</a></label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputMessage"><i class="fa fa-male bigger-110"></i>
+                                                    Género</label>
+                                                <select class="form-control " id="form-field-select-1">
+                                                    <option value="AL">Masculino</option>
+                                                    <option value="AK">Femenino</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName"><i class="fa fa-calendar bigger-110"></i> Fecha
+                                                    de Nacimiento <a>*</a></label>
+                                                <input class="form-control date-picker input-mask-date"
+                                                    id="form-field-mask-1" type="text" data-date-format="dd-mm-yyyy">
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+
+                                                <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
+                                                    Número de Identidad Personal</label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Email </label>
+                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                </div>
+
+
+                                                <div class="form-group col-lg-6">
+
+                                                        <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
+                                                             <a> *</a></label>
+        
+        
+        
+                                                        <input class="form-control input-mask-phone" type="text"
+                                                            id="telefono" />
+        
     
-                                <div class="col-sm-12" style="margin-top: 10px">
-    
-    
-    
-                                    <div class="tab-content" style="height:495px;overflow-y: scroll;">
-                                        <div id="home" class="tab-pane fade in active">
-    
-                                            <strong>Datos Generales </strong>
-    
-    
-                                            <div class="tab-content" style="height: 240px;">
+                                                    </div>
 
                                                     <div class="form-group col-lg-6">
-                                                            <label for="inputName">Expediente</label>
-                                                            <input type="text" disabled style="color: black" class="form-control" value="AA102019" id="inputName" placeholder="" />
-                                                        </div> 
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputName">Nombres</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputName">Apellidos</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputMessage"><i class="fa fa-male bigger-110"></i>
-                                                        Sexo <a>*</a></label>
-                                                    <select class="form-control " id="form-field-select-1">
-                                                        <option value="AL">Masculino</option>
-                                                        <option value="AK">Femenino</option>
-                                                    </select>
-                                                </div>
-    
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputName"><i class="fa fa-calendar bigger-110"></i> Fecha
-                                                        de nacimiento</label>
-                                                    <input class="form-control date-picker input-mask-date"
-                                                        id="form-field-mask-1" type="text" data-date-format="dd-mm-yyyy">
-                                                </div>
-    
-                                                <div class="form-group col-lg-6">
-    
-                                                    <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
-                                                        DUI</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-    
-                                                </div>
-    
-    
+
+                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono móvil
+                                                                 <a> </a></label>
+            
+            
+            
+                                                            <input class="form-control input-mask-phone" type="text"
+                                                                id="telefono" />
+            
+            
+            
+                                                        </div>
+
+                                                        <div class="form-group col-lg-12">
+
+                                                                <label for="inputName"><i class="ace-icon fa fa-home"></i>
+                                                                    Dirección</label>
+                                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                            </div>
+
+
+                                        </div>
+                                        <br>
+                                        
+                                        
+
+                                        <strong>Datos de Encargado </strong>
+
+
+                                        <div class="tab-content" style="height: 250px">
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName">Nombre(s) <a>*</a></label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
                                             </div>
-                                            <br>
-    
-                                            <strong>Datos de Contacto</strong>
-                                            <div class="tab-content" style="height: 170px;">
-                                                <div class="form-group col-lg-3">
-    
-                                                    <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
-                                                        </label>
-    
-    
-    
-                                                    <input class="form-control input-mask-phone" type="text"
-                                                        id="telefono" />
-    
-    
-    
-                                                </div>
-    
-                                                <div class="form-group col-lg-3">
-    
-                                                    <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
-                                                        móvil</label>
-    
-    
-    
-                                                    <input class="form-control input-mask-phone" type="text"
-                                                        id="telefono" />
-    
-    
-    
-                                                </div>
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo
-                                                        electrónico(opcional)</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-                                                <div class="form-group col-lg-12">
-    
-                                                    <label for="inputName"><i class="ace-icon fa fa-home"></i>
-                                                        Dirección</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <p style="visibility: hidden">Raw denim you probably haven't heard of them
-                                                    jean shorts Austin.</p>
-    
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName">Apellido(s) <a>*</a></label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
                                             </div>
-                                            <br>
-    
-                                            <strong>Datos de Encargado </strong>
-    
-    
-                                            <div class="tab-content" style="height: 175px">
-                                                <div class="form-group col-lg-4">
-                                                    <label for="inputName">Nombres</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <div class="form-group col-lg-4">
-                                                    <label for="inputName">Apellidos</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <div class="form-group col-lg-4">
-                                                    <label for="inputMessage"><i class="fa fa-male bigger-110"></i> </label>
-                                                    <select class="form-control " id="form-field-select-1">
-                                                        <option value="AL">Conocido/a</option>
-                                                        <option value="AK">Padre</option>
-                                                        <option value="AK">Madre</option>
-                                                        <option value="AK">Tio/a</option>
-                                                        <option value="AK">Primo/a</option>
-                                                    </select>
-                                                </div>
-    
-    
-    
-    
-    
-                                                <div class="form-group col-lg-6">
-    
-                                                    <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
-                                                        DUI</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-    
-                                                </div>
-                                                <div class="form-group col-lg-6">
-    
-    
-                                                    <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputMessage"><i class="fa fa-male bigger-110"></i>  Es </label>
+                                                <select class="form-control " id="form-field-select-1">
+                                                    <option value="AL">Conocido/a</option>
+                                                    <option value="AK">Padre</option>
+                                                    <option value="AK">Madre</option>
+                                                    <option value="AK">Tio/a</option>
+                                                    <option value="AK">Primo/a</option>
+                                                </select>
+                                            </div>
+
+
+
+
+
+                                            <div class="form-group col-lg-6">
+
+                                                <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
+                                                    Número de Identidad Personal</label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+
+                                            </div>
+                                            <div class="form-group col-lg-6">
+
+
+                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono <a>*</a>
+                                                </label>
+
+
+
+                                                <input class="form-control input-mask-phone" type="text"
+                                                    id="telefono" />
+
+
+
+                                            </div>
+                                            <div class="form-group col-lg-6">
+
+
+                                                    <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono movil 
                                                     </label>
     
     
@@ -2201,59 +2160,59 @@
     
     
                                                 </div>
-    
-                                                </div>
-    
-    
-    
-    
-    
-    
+
                                             </div>
-    
-    
-    
-    
+
+
+
+
+
+
                                         </div>
-    
+
+
+
+
                                     </div>
-    
-    
-    
-                            </form>
-    
-    
-                        </div>
-    
-                        <!-- /.PIE DE VENTANA EMERGENTE -->
-    
-                        <div class="modal-footer no-margin-top ">
-    
-    
-                            <button class="btn btn-primary btn-white btn-round pull-left "
-                                style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
-    
-                                <img src="btn-agregar.png" style="width: 30px;height: 30px"> <strong>Guardar</strong>
-    
-                            </button>
-    
-    
-                            <button class=" btn btn-danger btn-white btn-round pull-left"
-                                style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
-    
-                                <img src="btn-cancelar.png" style="width: 30px;height: 30px;"><strong> Cancelar
-                                </strong>
-                            </button>
-    
-    
-    
-                        </div>
-    
+
+                                </div>
+
+
+
+                        </form>
+
+
                     </div>
-                    <!-- /.CONTENIDO DE VENTANA EMERGENTE -->
-    
+
+                    <!-- /.PIE DE VENTANA EMERGENTE -->
+
+                    <div class="modal-footer no-margin-top ">
+
+
+                        <button class="btn btn-primary btn-white btn-round pull-left "
+                            style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
+
+                            <img src="btn-agregar.png" style="width: 30px;height: 30px"> <strong>Guardar</strong>
+
+                        </button>
+
+
+                        <button class=" btn btn-danger btn-white btn-round pull-left"
+                            style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
+
+                            <img src="btn-cancelar.png" style="width: 30px;height: 30px;"><strong> Cancelar
+                            </strong>
+                        </button>
+
+
+
+                    </div>
+
                 </div>
+                <!-- /.CONTENIDO DE VENTANA EMERGENTE -->
+
             </div>
+        </div>
 
     
 
@@ -2261,163 +2220,167 @@
 
         <!--INICIO VENTANA EMERGENTE PARA MOSTRAR DATOS DE PACIENTES -->
 
-        <div id="modal-perfil" class="modal fade" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header no-padding">
-                            <div class="table-header" style="background: #2aa5a5">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                    <span class="white">&times;</span>
-                                </button>
-                                <strong><i class="fa fa-list"></i> Datos de Paciente</strong>
-                            </div>
+        <div id="modal-infopaciente" class="modal fade" tabindex="-1">
+            <div class="modal-dialog" style="width: 50%">
+                <div class="modal-content">
+                    <div class="modal-header no-padding">
+                        <div class="table-header" style="background: #2aa5a5">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <span class="white">&times;</span>
+                            </button>
+                            <strong><i class="fa fa-user"></i> Informacion de Paciente </strong>
                         </div>
-                    
-                        <div class="modal-body no-padding" style="background: #fcf8e3">
-                            
-                            <form>
+                    </div>
+                
+                    <div class="modal-body no-padding" style="background: #fcf8e3">
+                        
+                        <form>
+
+                            <div class="col-sm-12" style="margin-top: 10px">
+
+
+
+                                <div class="" style="height:500px;overflow-y: scroll;">
+                                    <div id="home" class="tab-pane fade in active">
+
+                                        <strong>Información General </strong>
+
+
+                                        <div class="tab-content" style="height: 400px;">
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName">Nombre(s) <a>*</a></label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName">Apellido(s) <a>*</a></label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputMessage"><i class="fa fa-male bigger-110"></i>
+                                                    Género</label>
+                                                <select class="form-control " id="form-field-select-1">
+                                                    <option value="AL">Masculino</option>
+                                                    <option value="AK">Femenino</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName"><i class="fa fa-calendar bigger-110"></i> Fecha
+                                                    de Nacimiento <a>*</a></label>
+                                                <input class="form-control date-picker input-mask-date"
+                                                    id="form-field-mask-1" type="text" data-date-format="dd-mm-yyyy">
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+
+                                                <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
+                                                    Número de Identidad Personal</label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+
+                                            </div>
+
+                                            <div class="form-group col-lg-6">
+                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Email </label>
+                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                </div>
+
+
+                                                <div class="form-group col-lg-6">
+
+                                                        <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
+                                                             <a> *</a></label>
+        
+        
+        
+                                                        <input class="form-control input-mask-phone" type="text"
+                                                            id="telefono" />
+        
     
-                                <div class="col-sm-12" style="margin-top: 10px">
-    
-    
-    
-                                    <div class="tab-content" style="height:495px;overflow-y: scroll;">
-                                        <div id="home" class="tab-pane fade in active">
-    
-                                            <strong>Datos de Paciente </strong>
-    
-    
-                                            <div class="tab-content" style="height: 240px;">
+                                                    </div>
 
                                                     <div class="form-group col-lg-6">
-                                                            <label for="inputName">Expediente</label>
-                                                            <input type="text" disabled style="color: black" class="form-control" value="AA102019" id="inputName" placeholder="" />
-                                                        </div> 
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputName">Nombres</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputName">Apellidos</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputMessage"><i class="fa fa-male bigger-110"></i>
-                                                        Género</label>
-                                                    <select class="form-control " id="form-field-select-1">
-                                                        <option value="AL">Masculino</option>
-                                                        <option value="AK">Femenino</option>
-                                                    </select>
-                                                </div>
-    
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputName"><i class="fa fa-calendar bigger-110"></i> Fecha
-                                                        de nacimiento</label>
-                                                    <input class="form-control date-picker input-mask-date"
-                                                        id="form-field-mask-1" type="text" data-date-format="dd-mm-yyyy">
-                                                </div>
-    
-                                                <div class="form-group col-lg-6">
-    
-                                                    <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
-                                                        DUI</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-    
-                                                </div>
-    
-    
+
+                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono móvil
+                                                                 <a> </a></label>
+            
+            
+            
+                                                            <input class="form-control input-mask-phone" type="text"
+                                                                id="telefono" />
+            
+            
+            
+                                                        </div>
+
+                                                        <div class="form-group col-lg-12">
+
+                                                                <label for="inputName"><i class="ace-icon fa fa-home"></i>
+                                                                    Dirección</label>
+                                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                            </div>
+
+
+                                        </div>
+                                        <br>
+                                        
+                                        
+
+                                        <strong>Datos de Encargado </strong>
+
+
+                                        <div class="tab-content" style="height: 250px">
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName">Nombre(s) <a>*</a></label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
                                             </div>
-                                            <br>
-    
-                                            <strong>Datos de Contacto</strong>
-                                            <div class="tab-content" style="height: 170px;">
-                                                <div class="form-group col-lg-3">
-    
-                                                    <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
-                                                        1</label>
-    
-    
-    
-                                                    <input class="form-control input-mask-phone" type="text"
-                                                        id="telefono" />
-    
-    
-    
-                                                </div>
-    
-                                                <div class="form-group col-lg-3">
-    
-                                                    <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
-                                                        2</label>
-    
-    
-    
-                                                    <input class="form-control input-mask-phone" type="text"
-                                                        id="telefono" />
-    
-    
-    
-                                                </div>
-                                                <div class="form-group col-lg-6">
-                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo
-                                                        electrónico(opcional)</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-                                                <div class="form-group col-lg-12">
-    
-                                                    <label for="inputName"><i class="ace-icon fa fa-home"></i>
-                                                        Dirección</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <p style="visibility: hidden">Raw denim you probably haven't heard of them
-                                                    jean shorts Austin.</p>
-    
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputName">Apellido(s) <a>*</a></label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
                                             </div>
-                                            <br>
-    
-                                            <strong>Datos de Encargado </strong>
-    
-    
-                                            <div class="tab-content" style="height: 175px">
-                                                <div class="form-group col-lg-4">
-                                                    <label for="inputName">Nombres</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <div class="form-group col-lg-4">
-                                                    <label for="inputName">Apellidos</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-                                                </div>
-    
-                                                <div class="form-group col-lg-4">
-                                                    <label for="inputMessage"><i class="fa fa-male bigger-110"></i> </label>
-                                                    <select class="form-control " id="form-field-select-1">
-                                                        <option value="AL">Conocido/a</option>
-                                                        <option value="AK">Padre</option>
-                                                        <option value="AK">Madre</option>
-                                                        <option value="AK">Tio/a</option>
-                                                        <option value="AK">Primo/a</option>
-                                                    </select>
-                                                </div>
-    
-    
-    
-    
-    
-                                                <div class="form-group col-lg-6">
-    
-                                                    <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
-                                                        DUI</label>
-                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
-    
-                                                </div>
-                                                <div class="form-group col-lg-6">
-    
-    
-                                                    <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputMessage"><i class="fa fa-male bigger-110"></i>  Es </label>
+                                                <select class="form-control " id="form-field-select-1">
+                                                    <option value="AL">Conocido/a</option>
+                                                    <option value="AK">Padre</option>
+                                                    <option value="AK">Madre</option>
+                                                    <option value="AK">Tio/a</option>
+                                                    <option value="AK">Primo/a</option>
+                                                </select>
+                                            </div>
+
+
+
+
+
+                                            <div class="form-group col-lg-6">
+
+                                                <label for="inputName"><i class="fa fa-credit-card bigger-110"></i>
+                                                    Número de Identidad Personal</label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="" />
+
+                                            </div>
+                                            <div class="form-group col-lg-6">
+
+
+                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono <a>*</a>
+                                                </label>
+
+
+
+                                                <input class="form-control input-mask-phone" type="text"
+                                                    id="telefono" />
+
+
+
+                                            </div>
+                                            <div class="form-group col-lg-6">
+
+
+                                                    <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono movil 
                                                     </label>
     
     
@@ -2428,54 +2391,60 @@
     
     
                                                 </div>
-    
-                                                </div>
-    
-    
-    
-    
-    
-    
+
                                             </div>
-    
-    
-    
-    
+
+
+
+
+
+
                                         </div>
-    
+
+
+
+
                                     </div>
-    
-    
-    
-                            </form>
-    
-    
-                        </div>
-    
-                        <!-- /.PIE DE VENTANA EMERGENTE -->
-    
-                        <div class="modal-footer no-margin-top ">
-    
-    
-                            <button class="btn btn-yellow btn-white btn-round pull-left "
-                                style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
-    
-                                <i class="glyphicon glyphicon-log-in"></i> <strong>Cerrar Ventana</strong>
-    
-                            </button>
-    
-    
-                            
-    
-    
-    
-                        </div>
-    
+
+                                </div>
+
+
+
+                        </form>
+
+
                     </div>
-                    <!-- /.CONTENIDO DE VENTANA EMERGENTE -->
-    
+
+                    <!-- /.PIE DE VENTANA EMERGENTE -->
+
+                    <div class="modal-footer no-margin-top ">
+
+
+                        <button class="btn btn-primary btn-white btn-round pull-left "
+                            style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
+
+                            <img src="btn-impresora.png" style="width: 30px;height: 30px"> <strong>Imprimir</strong>
+
+                        </button>
+
+
+                        <button class=" btn btn-danger btn-white btn-round pull-left"
+                            style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
+
+                            <img src="btn-cancelar.png" style="width: 30px;height: 30px;"><strong> Salir
+                            </strong>
+                        </button>
+
+
+
+                    </div>
+
                 </div>
+                <!-- /.CONTENIDO DE VENTANA EMERGENTE -->
+
             </div>
+        </div>
+
 
         
 
