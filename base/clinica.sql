@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-09-2019 a las 06:51:08
+-- Tiempo de generación: 03-10-2019 a las 10:09:21
 -- Versión del servidor: 10.1.34-MariaDB
 -- Versión de PHP: 7.2.8
 
@@ -134,6 +134,8 @@ INSERT INTO `t_historial_clinico` (`idhistorial_medico`, `id_paciente`, `codigo`
 CREATE TABLE `t_inventario_medicamentos` (
   `idmedicamentos_inventario` int(11) NOT NULL,
   `nombre_medicamento` varchar(45) NOT NULL,
+  `presentacion` varchar(20) NOT NULL,
+  `contenido` varchar(20) NOT NULL,
   `cantidad` int(10) NOT NULL,
   `ubicacion` varchar(200) NOT NULL,
   `fecha_ingreso` date NOT NULL,
@@ -146,9 +148,9 @@ CREATE TABLE `t_inventario_medicamentos` (
 -- Volcado de datos para la tabla `t_inventario_medicamentos`
 --
 
-INSERT INTO `t_inventario_medicamentos` (`idmedicamentos_inventario`, `nombre_medicamento`, `cantidad`, `ubicacion`, `fecha_ingreso`, `stock`, `fecha_vencimiento`, `estado`) VALUES
-(1, 'acetaminofen', 10, 'estante 1', '2019-08-11', 0, '2019-12-01', 0),
-(2, 'dofofin', 20, 'estante 3', '2019-08-16', 0, '2019-09-07', 0);
+INSERT INTO `t_inventario_medicamentos` (`idmedicamentos_inventario`, `nombre_medicamento`, `presentacion`, `contenido`, `cantidad`, `ubicacion`, `fecha_ingreso`, `stock`, `fecha_vencimiento`, `estado`) VALUES
+(1, 'acetaminofen', '', '', 10, 'estante 1', '2019-08-11', 0, '2019-12-01', 0),
+(2, 'dofofin', '', '', 20, 'estante 3', '2019-08-16', 0, '2019-09-07', 0);
 
 -- --------------------------------------------------------
 
