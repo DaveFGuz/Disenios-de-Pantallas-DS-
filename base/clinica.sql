@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-10-2019 a las 10:09:21
+-- Tiempo de generación: 04-10-2019 a las 04:01:58
 -- Versión del servidor: 10.1.34-MariaDB
 -- Versión de PHP: 7.2.8
 
@@ -114,6 +114,7 @@ CREATE TABLE `t_historial_clinico` (
   `observacion` varchar(1000) DEFAULT NULL,
   `antecedentes` varchar(1000) DEFAULT '',
   `diagnostico` varchar(1000) NOT NULL,
+  `ordenesexamen` varchar(200) NOT NULL,
   `fecha_registro_expediente` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -121,9 +122,9 @@ CREATE TABLE `t_historial_clinico` (
 -- Volcado de datos para la tabla `t_historial_clinico`
 --
 
-INSERT INTO `t_historial_clinico` (`idhistorial_medico`, `id_paciente`, `codigo`, `observacion`, `antecedentes`, `diagnostico`, `fecha_registro_expediente`) VALUES
-(1, 1, '', 'se encuentra  bien', NULL, '', '2019-08-07'),
-(2, 2, '', 'mal', NULL, '', '2019-08-16');
+INSERT INTO `t_historial_clinico` (`idhistorial_medico`, `id_paciente`, `codigo`, `observacion`, `antecedentes`, `diagnostico`, `ordenesexamen`, `fecha_registro_expediente`) VALUES
+(1, 1, '', 'se encuentra  bien', NULL, '', '', '2019-08-07'),
+(2, 2, '', 'mal', NULL, '', '', '2019-08-16');
 
 -- --------------------------------------------------------
 
